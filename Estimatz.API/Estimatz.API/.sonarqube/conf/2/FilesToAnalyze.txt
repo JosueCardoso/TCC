@@ -1,0 +1,4 @@
+﻿G:\Estimatz\Estimatz.API\Estimatz.API\Domain\Estimatz.API.Services\Calculator\AbstractFactoryCalculator.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Domain\Estimatz.API.Services\Calculator\DefaultCalculator.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Domain\Estimatz.API.Services\Calculator\ICalculator.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Domain\Estimatz.API.Services\Calculator\TrivariateCalculator.cs

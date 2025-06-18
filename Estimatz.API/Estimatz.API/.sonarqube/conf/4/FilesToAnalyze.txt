@@ -1,0 +1,8 @@
+﻿G:\Estimatz\Estimatz.API\Estimatz.API\Infrastructure\Estimatz.API.Data\RoomRepository\IRoomRepository.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Infrastructure\Estimatz.API.Data\RoomRepository\RoomRepository.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Infrastructure\Estimatz.API.Data\StoryRepository\IStoryRepository.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Infrastructure\Estimatz.API.Data\StoryRepository\StoryRepository.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Infrastructure\Estimatz.API.Data\UserRepository\Cache\IUserCache.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Infrastructure\Estimatz.API.Data\UserRepository\Cache\UserCache.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Infrastructure\Estimatz.API.Data\UserRepository\IUserRepository.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Infrastructure\Estimatz.API.Data\UserRepository\UserRepository.cs

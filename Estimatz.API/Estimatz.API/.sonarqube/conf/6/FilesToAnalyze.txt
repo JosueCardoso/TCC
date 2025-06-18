@@ -1,0 +1,13 @@
+﻿G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Commands\AddStory\AddStoryCommand.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Commands\AddStory\AddStoryCommandHandler.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Commands\DeleteRoom\DeleteRoomCommand.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Commands\DeleteRoom\DeleteRoomCommandHandler.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Commands\Mapping\RoomMapping.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Commands\RemoveStory\RemoveStoryCommand.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Commands\RemoveStory\RemoveStoryCommandHandler.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Commands\SaveRoom\SaveRoomCommand.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Commands\SaveRoom\SaveRoomCommandHandler.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Commands\UpdateStatusStory\UpdateStatusStoryCommand.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Commands\UpdateStatusStory\UpdateStatusStoryCommandHandler.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Commands\UpdateStoryVote\UpdateStoryVoteCommand.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Commands\UpdateStoryVote\UpdateStoryVoteCommandHandler.cs

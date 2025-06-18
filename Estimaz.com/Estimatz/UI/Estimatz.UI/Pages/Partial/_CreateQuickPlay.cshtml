@@ -1,0 +1,46 @@
+﻿@using Estimatz.Resources;
+@using Estimatz.UI.Models;
+
+@{
+    ViewData["Title"] = "Criar sala instantânea";
+    var roomConfigModel = new RoomConfigModel();
+}
+
+<script>
+    $("#headerIndex").addClass("d-none");
+</script>
+
+<div class="w-100 d-flex justify-content-end justify-content-sm-center align-items-center flex-column" style="height:95vh">
+    <img src="~/images/@Language.GetLogoName()" class="logo" />
+
+    @*Seletor de idioma*@
+    <div class="dropdown language-selector">
+        <button class="btn dropdown-toggle text-black-50" type="button" id="dropdownLanguageSelector" data-bs-toggle="dropdown" aria-expanded="false">
+            @Language.GetString("Language")
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" style="cursor:pointer" onclick="switchCulture('pt-br')">@Language.GetString("Portuguese")</a></li>
+            <li><a class="dropdown-item" style="cursor:pointer" onclick="switchCulture('en-us')">@Language.GetString("English")</a></li>
+            <li><a class="dropdown-item" style="cursor:pointer" onclick="switchCulture('es-es')">@Language.GetString("Spanish")</a></li>
+        </ul>
+    </div>
+    
+    <h1 style="color:#00C9EE; top: 100px;" class="fs-2 text-center position-absolute">Sala Instantânea</h1>
+        
+    <div id="usernameQuickPlayContainer" class="d-flex flex-column">
+        <input id="usernameQuickPlayInput" type="text" class="form-control mb-4" placeholder="Digite seu nome" />
+        <button type="button" id="goForwardQuickPlayButton" class="btn btn-info" style=" color:white">Avançar</button>
+    </div>
+
+    <div id="roomConfigQuickPlayContainer" class="d-none">
+        <partial name="~/Pages/Partial/_RoomConfig.cshtml" model="roomConfigModel" />
+    </div>    
+
+    <a class="mt-3" style="cursor: pointer; text-decoration: none; color:#00C9EE" href="@Url.Action("Index", "Base")">@Language.GetString("Cancel")</a>
+</div>
+
+<script src="~/js/pages/partial/_createQuickPlay.js" asp-append-version="true"></script>
+<script>
+    var createQuickUserUrl = '@Url.Action("CreateQuickUser", "Account")';
+    var openRoomUrl = '@Url.Action("OpenRoom", "Room")';
+</script> 

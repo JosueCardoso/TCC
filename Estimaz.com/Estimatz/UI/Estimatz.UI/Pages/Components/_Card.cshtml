@@ -1,0 +1,13 @@
+﻿@model string
+
+<div id="card_@Model" aria-data="@Model" name="cardForSelect" class="col-2 border border-1 rounded d-flex justify-content-center align-items-center m-2 shadow-sm" style="width: 80px; height: 110px; cursor: pointer;">
+	@if(Model == "coffee"){
+		<img width="30px" height="30px" src="~/icons/coffee-cup.png" />
+	}else if(Model == "interrogation"){
+		<h1 class="m-auto fs-2">?</h1>
+	}else if(Model == "meio"){
+		<h1 class="m-auto fs-2">0.5</h1>
+	}else{
+		<h1 class="m-auto fs-2">@Model</h1>
+	}	
+</div>

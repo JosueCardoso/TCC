@@ -1,0 +1,26 @@
+﻿@model Estimatz.UI.Models.VotingResultModel
+
+<div class="d-flex align-items-center">
+	@if(Model is not null)
+	{
+		if(Model.EstimateType == Entities.Room.EstimateType.Default)
+		{
+			if (Model.Deck != Entities.Room.Decks.TShirt)
+			{
+				<span class="me-4">Média: @Model.Average</span>
+			}
+
+			<ul class="list-group list-group-flush">
+			@foreach (var vote in Model.Votes)
+			{
+				var voteString = vote.Key == "interrogation" ? "?" : vote.Key == "meio" ? "0,5" : vote.Key;
+				<li class="list-group-item">@vote.Value player(s): @voteString </li>
+			}
+			</ul>
+		}
+		else
+		{
+			//TODO: Aqui vai a estimativa trivariada
+		}		
+	}	
+</div>

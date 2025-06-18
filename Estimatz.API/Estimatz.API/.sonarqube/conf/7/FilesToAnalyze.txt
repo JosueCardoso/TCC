@@ -1,0 +1,13 @@
+﻿G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API\Controllers\BaseController.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API\Controllers\v1\RoomController.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API\Controllers\v1\StoryController.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API\Hubs\PlanningHub.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API\Models\ActionResponse.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API\Program.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API\obj\Debug\net6.0\Estimatz.API.GlobalUsings.g.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API\obj\Debug\net6.0\Estimatz.API.AssemblyInfo.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API\obj\Debug\net6.0\Estimatz.API.MvcApplicationPartsAssemblyInfo.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API\appsettings.Development.json
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API\appsettings.json
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API\Properties\launchSettings.json

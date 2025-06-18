@@ -1,0 +1,6 @@
+projectKey=Estimatz_Estimatz.API_AYm-YTQApLlDeQTSXe0T
+serverUrl=http://localhost:9000
+serverVersion=10.1.0.73491
+dashboardUrl=http://localhost:9000/dashboard?id=Estimatz_Estimatz.API_AYm-YTQApLlDeQTSXe0T
+ceTaskId=AYm-bI9KpLlDeQTSXe0i
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYm-bI9KpLlDeQTSXe0i

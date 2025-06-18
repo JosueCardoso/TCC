@@ -1,0 +1,2 @@
+﻿G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Domain\Estimatz.Login.API.Services\Token\ITokenManager.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Domain\Estimatz.Login.API.Services\Token\TokenManager.cs

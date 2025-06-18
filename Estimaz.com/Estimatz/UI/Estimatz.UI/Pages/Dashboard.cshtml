@@ -1,0 +1,16 @@
+﻿@model Estimatz.UI.Models.DashboardModel;
+
+@{
+    Layout = "_Layout2";
+    ViewData["title"] = "Dashboard";
+}
+
+<div class="p-3 p-sm-5" style="height: 99%;">    
+    <h1 class="text-black-50">Dashboard</h1>
+
+    <div class="h-100 row">
+        @foreach(var indicator in Model.Indicators){
+            <partial name="~/Pages/Components/_CardIndicators.cshtml" model="indicator" />
+        }
+    </div>
+</div>

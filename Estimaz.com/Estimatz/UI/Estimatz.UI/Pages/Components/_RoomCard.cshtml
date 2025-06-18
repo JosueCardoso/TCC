@@ -1,0 +1,30 @@
+﻿@using Estimatz.Entities.Room
+@model Estimatz.UI.Models.SimpleRoomModel
+
+@{
+	var classStatus = Model.GetClassByRoomStatus();
+}
+
+<div class="col-12 col-sm-6 col-lg-3 p-2">
+	<div class="border border-start-0 rounded position-relative h-100">
+		<div class="position-absolute status-room @classStatus"></div>
+		<div class="d-flex flex-column p-3 h-100">
+			<h1 class="fs-4">@Model.RoomName</h1>
+			<span>@Model.RoomStatusDescription</span>
+
+			@if (Model.RoomStatus != RoomStatus.FreeVoting)
+			{
+				if (Model.TotalStories == 0){
+					<span>Ainda não foram adicionadas histórias</span>
+				}else{
+					<span>Histórias estimadas: @Model.FinishedStories de @Model.TotalStories</span>
+				}				
+			}
+
+			<div class="d-flex justify-content-between align-items-end h-100 w-100">
+				<button data-bs-toggle="modal" data-bs-target="#deleteRoomModal" name="deleteRoomButton" aria-data="@Model.Id" class="btn btn-link" style="height:38px; color:#ff4a4a; text-decoration: none;"><i class="bi bi-trash me-2" name="editRow" style="color:#ff4a4a;"></i>Excluir</button>
+				<button name="openRoomButton" aria-data="@Model.Id"  class="btn btn-info open-button-card" style="height:38px;">Abrir</button>
+			</div>			
+		</div>
+	</div>
+</div>

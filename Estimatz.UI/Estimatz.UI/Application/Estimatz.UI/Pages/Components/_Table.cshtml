@@ -1,0 +1,51 @@
+﻿@using Estimatz.UI.Entities.Deck
+@model Estimatz.UI.Models.UserStoryModel
+
+@{
+	var session = Context.Request.HttpContext.Session;
+	var username = session.GetString("username");
+	var userId = session.GetString("userId");
+	var playerRole = session.GetString("playerRole");
+	var isAdmin = bool.Parse(session.GetString("isAdmin"));
+	var selectedDeck = int.Parse(session.GetString("selectedDeck"));
+
+	var turnCardsDisabled = Model is not null && Model.Status == Entities.Story.StoryStatus.InProgress ? "" : "disabled";
+	var displayNoneDeckContainer = Model is not null && Model.Status == Entities.Story.StoryStatus.InProgress ? "" : "d-none";
+	var displayNoneVoteResult = Model is not null && Model.Status == Entities.Story.StoryStatus.Finished ? "" : "d-none";
+	var displayPlayersConnected = Model is not null && Model.Status == Entities.Story.StoryStatus.Finished ? "d-none" : "";
+}
+
+<div class="container">	
+	<div id="playersConnected" class="row justify-content-center mt-5 @displayPlayersConnected"></div>
+
+	@if(Model is not null){
+		<div id="votingResultContainer" class="d-flex justify-content-center my-4 @displayNoneVoteResult">
+			<partial name="~/Pages/Components/_VoteResult.cshtml" model="Model.VotingResult" />
+		</div>
+	}	
+
+	<div id="votingDeckContainer" class="row justify-content-center mt-4 p-3 @displayNoneDeckContainer">
+		@foreach (var item in DeckValues.Get(selectedDeck))
+		{
+			<partial name="~/Pages/Components/_Card.cshtml" model="item" />
+		}
+	</div>
+	@if (isAdmin)
+	{
+		<div class="d-flex justify-content-center mt-4">
+			<button id="turnCardButton" type="button" class="btn btn-light mx-2" @turnCardsDisabled>Virar cartas</button>
+			<button id="refreshVotingButton" type="button" class="btn btn-light mx-2" disabled>Limpar votação</button>
+			<button id="stopVotingButton" type="button" class="btn btn-light mx-2" disabled>Finalizar votação</button>			
+		</div>
+	}
+</div>
+
+<script>
+	var userName = '@Html.Raw(username)';
+	var userId = '@Html.Raw(userId)';
+	var playerRole = '@Html.Raw(playerRole)';
+	var isAdmin = '@Html.Raw(isAdmin)';
+	var storyId = '@Html.Raw(Model is null ? Guid.Empty : Model.Id)'
+</script>
+
+<script src="~/js/pages/components/_table.js" asp-append-version="true"></script>

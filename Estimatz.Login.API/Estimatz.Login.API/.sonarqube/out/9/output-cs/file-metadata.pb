@@ -1,0 +1,15 @@
+•
+õG:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Tests\Estimatz.Login.API.Tests\Estimatz.Login.API.Commands\ConfirmEmail\ConfirmEmailCommandHandlerTest.csutf-8ô
+èG:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Tests\Estimatz.Login.API.Tests\Estimatz.Login.API.Commands\Logout\LogoutCommandHandlerTest.csutf-8•
+õG:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Tests\Estimatz.Login.API.Tests\Estimatz.Login.API.Commands\RefreshToken\RefreshTokenCommandHandlerTest.csutf-8•
+õG:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Tests\Estimatz.Login.API.Tests\Estimatz.Login.API.Commands\Register\RegisterNewUserCommandHandlerTests.csutf-8ö
+êG:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Tests\Estimatz.Login.API.Tests\Estimatz.Login.API.Data\TokenCacheTests\TokenMemoryCacheTest.csutf-8ò
+éG:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Tests\Estimatz.Login.API.Tests\Estimatz.Login.API.Notifications\NotificationsServiceTests.csutf-8õ
+ëG:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Tests\Estimatz.Login.API.Tests\Estimatz.Login.API.Queries\SignInTests\SignInQueryHandlerTest.csutf-8ï
+ãG:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Tests\Estimatz.Login.API.Tests\Estimatz.Login.API.Services\TokenTests\TokenManagerTest.csutf-8x
+oG:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Tests\Estimatz.Login.API.Tests\Fakes\FakeUserSignInManager.csutf-8c
+ZG:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Tests\Estimatz.Login.API.Tests\Usings.csutf-8}
+rC:\Users\Josue\.nuget\packages\microsoft.net.test.sdk\17.1.0\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.csutf-8ò
+åG:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Tests\Estimatz.Login.API.Tests\obj\Debug\net6.0\Estimatz.Login.API.Tests.GlobalUsings.g.csutf-8ú
+êG:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Tests\Estimatz.Login.API.Tests\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.csutf-8ñ
+äG:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Tests\Estimatz.Login.API.Tests\obj\Debug\net6.0\Estimatz.Login.API.Tests.AssemblyInfo.csutf-8

@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{4139B170-65E6-4A57-85B5-0ADB0643B65C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{5941CD8E-D319-4203-88F9-7DB6A28D15AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{CF8361D6-632A-4DD4-9AC2-1F40B614ADAB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estimatz.API", "Application\Estimatz.API\Estimatz.API.csproj", "{032179A7-B117-4AEC-AD17-EA0E548A8A5D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estimatz.API.Entities", "Domain\Estimatz.API.Entities\Estimatz.API.Entities.csproj", "{AE7A4C98-C3EF-408D-A411-663C1B848EF8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estimatz.API.Data", "Infrastructure\Estimatz.API.Data\Estimatz.API.Data.csproj", "{C5EDE80A-6433-4E94-9483-D2752531E762}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estimatz.API.Commands", "Application\Estimatz.API.Commands\Estimatz.API.Commands.csproj", "{BCE25784-BBD2-4B74-94D0-C3C30017F45D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estimatz.API.Queries", "Application\Estimatz.API.Queries\Estimatz.API.Queries.csproj", "{48269863-AE94-4B95-97C4-FB1F4F44A91E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estimatz.API.CosmosDB", "Infrastructure\Estimatz.API.CosmosDB\Estimatz.API.CosmosDB.csproj", "{2AC7792D-A1DB-4545-AB09-842318BCC4C8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estimatz.API.Notifications", "Application\Estimatz.API.Notifications\Estimatz.API.Notifications.csproj", "{9D3A582F-A3E1-485E-8538-18A3179C6C66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estimatz.API.Services", "Domain\Estimatz.API.Services\Estimatz.API.Services.csproj", "{7F0A8177-4BC0-41BB-80B3-196AA4042424}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{032179A7-B117-4AEC-AD17-EA0E548A8A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{032179A7-B117-4AEC-AD17-EA0E548A8A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{032179A7-B117-4AEC-AD17-EA0E548A8A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{032179A7-B117-4AEC-AD17-EA0E548A8A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE7A4C98-C3EF-408D-A411-663C1B848EF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE7A4C98-C3EF-408D-A411-663C1B848EF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE7A4C98-C3EF-408D-A411-663C1B848EF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE7A4C98-C3EF-408D-A411-663C1B848EF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5EDE80A-6433-4E94-9483-D2752531E762}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5EDE80A-6433-4E94-9483-D2752531E762}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5EDE80A-6433-4E94-9483-D2752531E762}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5EDE80A-6433-4E94-9483-D2752531E762}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCE25784-BBD2-4B74-94D0-C3C30017F45D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE25784-BBD2-4B74-94D0-C3C30017F45D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE25784-BBD2-4B74-94D0-C3C30017F45D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE25784-BBD2-4B74-94D0-C3C30017F45D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48269863-AE94-4B95-97C4-FB1F4F44A91E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48269863-AE94-4B95-97C4-FB1F4F44A91E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48269863-AE94-4B95-97C4-FB1F4F44A91E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48269863-AE94-4B95-97C4-FB1F4F44A91E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AC7792D-A1DB-4545-AB09-842318BCC4C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AC7792D-A1DB-4545-AB09-842318BCC4C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AC7792D-A1DB-4545-AB09-842318BCC4C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AC7792D-A1DB-4545-AB09-842318BCC4C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D3A582F-A3E1-485E-8538-18A3179C6C66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D3A582F-A3E1-485E-8538-18A3179C6C66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D3A582F-A3E1-485E-8538-18A3179C6C66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D3A582F-A3E1-485E-8538-18A3179C6C66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F0A8177-4BC0-41BB-80B3-196AA4042424}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F0A8177-4BC0-41BB-80B3-196AA4042424}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F0A8177-4BC0-41BB-80B3-196AA4042424}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F0A8177-4BC0-41BB-80B3-196AA4042424}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{032179A7-B117-4AEC-AD17-EA0E548A8A5D} = {4139B170-65E6-4A57-85B5-0ADB0643B65C}
+		{AE7A4C98-C3EF-408D-A411-663C1B848EF8} = {5941CD8E-D319-4203-88F9-7DB6A28D15AD}
+		{C5EDE80A-6433-4E94-9483-D2752531E762} = {CF8361D6-632A-4DD4-9AC2-1F40B614ADAB}
+		{BCE25784-BBD2-4B74-94D0-C3C30017F45D} = {4139B170-65E6-4A57-85B5-0ADB0643B65C}
+		{48269863-AE94-4B95-97C4-FB1F4F44A91E} = {4139B170-65E6-4A57-85B5-0ADB0643B65C}
+		{2AC7792D-A1DB-4545-AB09-842318BCC4C8} = {CF8361D6-632A-4DD4-9AC2-1F40B614ADAB}
+		{9D3A582F-A3E1-485E-8538-18A3179C6C66} = {4139B170-65E6-4A57-85B5-0ADB0643B65C}
+		{7F0A8177-4BC0-41BB-80B3-196AA4042424} = {5941CD8E-D319-4203-88F9-7DB6A28D15AD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4879883D-D762-4680-809E-F941C0D17908}
+	EndGlobalSection
+EndGlobal

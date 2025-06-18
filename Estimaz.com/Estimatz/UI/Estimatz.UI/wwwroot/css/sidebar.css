@@ -1,0 +1,41 @@
+﻿.sidebar-estimatz {
+    max-width: 250px;
+    min-width: 50px;
+}
+
+.nav-item-estimatz {
+    border-radius: 5px;
+}
+
+    .nav-item-estimatz a span {
+        color: #00C9EE;
+    }
+
+    .nav-item-estimatz a i {
+        color: #00C9EE;
+    }
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #00C9EE;
+}
+
+.nav-link.active > span {
+    color: white;
+}
+
+.nav-link.active > i {
+    color: white;
+}
+
+
+.nav-item-estimatz:hover {
+    background-color: #00C9EE;
+}
+
+    .nav-item-estimatz:hover > a i {
+        color: white;
+    }
+
+    .nav-item-estimatz:hover > a span {
+        color: white;
+    }

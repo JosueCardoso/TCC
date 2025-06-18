@@ -1,0 +1,33 @@
+﻿@model Estimatz.UI.Models.UserStoryModel
+
+@{
+    var session = Context.Request.HttpContext.Session;
+    var isAdmin = bool.Parse(session.GetString("isAdmin"));
+}
+
+@if(Model is not null && Model.Id != Guid.Empty){
+    <div>
+        <h1 class="text-black-50 fs-3" id="storyTitle">@Model.Name</h1>
+    </div>
+    <div>
+        <h1 class="text-black-50 fs-5" id="storyStatus">Status: @Model.StatusDescription</h1>
+    </div>
+
+    @if (isAdmin)
+    {
+        <div class="d-flex justify-content-center mb-4">
+            @if (Model.Status == Entities.UserStory.StoryStatus.Unfinished)
+            {
+                <button id="startVotingButton" class="btn btn-info" style="color:white">Iniciar votação</button>
+            }@* //TODO: Por enquanto será desativado a opção de reiniciar a votação da US
+            else if (Model.Status == Entities.Story.StoryStatus.Finished)
+            {
+                <button class="btn btn-info" style="color:white">Nova votação</button>
+            }*@
+        </div>
+    }
+}
+
+<div>
+    <partial name="~/Pages/Components/_Table.cshtml" model="Model" />
+</div>

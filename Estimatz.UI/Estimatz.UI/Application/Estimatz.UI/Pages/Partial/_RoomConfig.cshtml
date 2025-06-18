@@ -1,0 +1,107 @@
+﻿@model Estimatz.UI.Models.RoomConfigModel
+
+<div id="firstConfigRoomContainer" class="row">
+	<div class="col-12 col-sm-7">
+
+		<input type="text" class="form-control mb-3" placeholder="Nome da sala" asp-for="RoomName">
+
+		<select class="form-select mb-3" aria-label="Default select example" id="SelectedDeck">
+			<option selected>Selecione o deck</option>
+
+			@foreach (var deck in Model.GetDecks())
+			{
+				<option value="@deck.Item1">@deck.Item2</option>
+			}
+
+		</select>
+
+		<select class="form-select mb-3" aria-label="Default select example" id="SelectedEstimateType">
+			<option selected>Selecione o tipo de estimativa</option>
+
+			@foreach (var estimateType in Model.GetEstimateTypes())
+			{
+				<option value="@estimateType.Item1">@estimateType.Item2</option>
+			}
+		</select>
+
+		<div class="form-check">
+			<input class="form-check-input" type="checkbox" value="" id="divideTeamCheckbox" asp-for="DivideTeams">
+			<label class="form-check-label" for="flexCheckDefault">
+				Dividir equipe em times
+			</label>
+		</div>
+		<div class="form-check">
+			<input class="form-check-input" type="checkbox" value="" id="intersperseTeamsCheckbox" disabled asp-for="IntersperseTeams">
+			<label class="form-check-label" for="flexCheckDefault">
+				Intercalar votação entre times
+			</label>
+		</div>
+	</div>
+	<div class="col-12 col-sm-5 text-center mt-4 mt-sm-0">
+		<span class="ms-sm-3 fw-bold text-black-50">Times</span>
+		<div class="d-flex flex-column align-items-center ps-3">
+			<div class="w-100 my-3" style="max-height: 100px; overflow: auto;">
+				<table class="table table-sm text-start">
+					<tbody id="teamsBodyTable">
+					</tbody>
+				</table>
+			</div>
+			<button href="#" id="addTeamLink" class="btn btn-link" style="text-decoration:none; color:#00C9EE " data-bs-toggle="modal" data-bs-target="#addTeamModal" disabled>Adicionar time</button>
+		</div>
+	</div>
+	<div class="col-12 justify-content-center text-center mt-4">
+		<button id="goForwardRoomConfigButton" class="btn btn-info" style="color: white; width: 200px;">Avançar</button>
+	</div>
+</div>
+
+<div id="secondConfigRoomContainer" class="row d-none">
+	<div class="col-12 col-sm-6">
+		<div class="border rounded" style="padding: 20px">
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="freeVoteCheckbox" checked>
+				<label class="form-check-label" for="flexCheckDefault">
+					Votação livre
+				</label>
+			</div>
+			<span class="text-black-50">Não é necessário adicionar tarefas</span>
+		</div>
+	</div>
+
+	<div class="col-12 col-sm-6 mt-3 mt-sm-0">
+		<div class="border rounded" style="padding: 20px">
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="taskVotingCheckbox">
+				<label class="form-check-label" for="flexCheckDefault">
+					Votação por tarefa
+				</label>
+			</div>
+			<span class="text-black-50">É necessário cadastrar tarefas para serem estimadas.</span>
+		</div>
+	</div>
+
+	<div class="col-12 justify-content-center text-center mt-4">
+		<button id="startRoomButton" class="btn btn-info" style="color: white; width: 200px;">Iniciar sala</button>
+	</div>
+</div>
+
+@*Criar validação para não inserir time sem nome*@
+<div class="modal fade" id="addTeamModal" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" style="width: 200px">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div>
+					<input id="newTeamInput" type="text" class="form-control mb-4" placeholder="Nome do time" />
+					<button data-bs-dismiss="modal" id="cancelAddTeamButton" class="btn btn-link" style="text-decoration:none; color:#00C9EE ">Cancelar</button>
+					<button data-bs-dismiss="modal" id="addTeamButton" class="btn btn-info float-end" style="color: white">Salvar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="~/js/pages/partial/_roomConfig.js" asp-append-version="true"></script>
+
+<script>
+	var addTeamOnTableUrl = '@Url.Action("AddTeamOnTable", "Rooms")';
+	var saveRoomConfigUrl = '@Url.Action("SaveRoomConfig", "Rooms")';
+</script>

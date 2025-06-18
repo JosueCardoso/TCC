@@ -1,0 +1,11 @@
+e
+\G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API\Controllers\BaseController.csutf-8h
+_G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API\Controllers\v1\RoomController.csutf-8i
+`G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API\Controllers\v1\StoryController.csutf-8[
+RG:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API\Hubs\PlanningHub.csutf-8`
+WG:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API\Models\ActionResponse.csutf-8R
+IG:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API\Program.csutf-8y
+nG:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API\obj\Debug\net6.0\Estimatz.API.GlobalUsings.g.csutf-8‰
+~G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.csutf-8w
+lG:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API\obj\Debug\net6.0\Estimatz.API.AssemblyInfo.csutf-8Š
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API\obj\Debug\net6.0\Estimatz.API.MvcApplicationPartsAssemblyInfo.csutf-8

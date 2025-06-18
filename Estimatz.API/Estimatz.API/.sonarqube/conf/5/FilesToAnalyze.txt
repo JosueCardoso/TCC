@@ -1,0 +1,8 @@
+﻿G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Queries\GetAllRooms\GetSimpleRoomsQuery.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Queries\GetAllRooms\GetSimpleRoomsQueryHandler.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Queries\GetIndicators\GetIndicatorsQuery.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Queries\GetIndicators\GetIndicatorsQueryHandler.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Queries\GetRoom\GetRoomQuery.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Queries\GetRoom\GetRoomQueryHandler.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Queries\GetStory\GetStoryQuery.cs
+G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Queries\GetStory\GetStoryQueryHandler.cs

@@ -1,0 +1,1 @@
+﻿G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Infrastructure\Estimatz.Login.API.Infra.Events\TextFile1.txt

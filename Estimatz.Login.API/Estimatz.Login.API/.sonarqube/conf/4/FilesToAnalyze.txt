@@ -1,0 +1,2 @@
+﻿G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API.Notifications\INotificator.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API.Notifications\NotificationsService.cs

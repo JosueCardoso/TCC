@@ -1,0 +1,79 @@
+﻿@using Estimatz.UI.Resources;
+@using Estimatz.UI.Extensions;
+@{
+    var session = Context.Request.HttpContext.Session;
+    string username = session.GetString("username");    
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["title"] - Estimatz</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/effects.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/sidebar.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/css/responsive.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/pages/_layout2.js" asp-append-version="true"></script>
+
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-light shadow-sm p-0">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <img src="~/images/@Language.GetLogoName()" style="width: 100px" class="ms-3" />
+                </a>
+                <div class="dropdown" style="width: 150px">
+                    <a href="#" class="d-flex align-items-center text-black text-decoration-none dropdown-toggle justify-content-end" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">                        
+                        <span class="d-none d-sm-inline mx-1">@username</span>
+                    </a>
+                    <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser1">
+                        <li><a class="dropdown-item" href="#">Configurações</a></li>
+                        <li><a class="dropdown-item" href="#">Perfil</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li id="logoutItemMenu"><a class="dropdown-item" href="#">Sair</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row flex-nowrap">
+                <div id="sidebar" class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 shadow-sm sidebar-estimatz">
+                    <div class="d-flex flex-column align-items-center align-items-sm-start px-2 pt-2 text-white" style="height: 94vh; margin-top:11px;">
+                        <ul class="navbar-nav nav nav-pills flex-column mb-auto mb-0 align-items-center align-items-sm-start w-100" id="menu">                            
+                            <li class="w-100 nav-item-estimatz" id="dashboardMenuLink">
+                                <a href="#" data-bs-toggle="collapse" class="nav-link px-0 py-1 align-middle d-flex align-items-center justify-content-center justify-content-sm-start @MenuManager.MenuIsActive("dashboard")">
+                                    <i class="fs-4 bi-speedometer2 ms-sm-3"></i> <span class="ms-3 d-none d-sm-inline">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="w-100 nav-item-estimatz" id="roomsMenuLink">
+                                <a href="#" data-bs-toggle="collapse" class="nav-link px-0 py-1 align-middle d-flex align-items-center justify-content-center justify-content-sm-start @MenuManager.MenuIsActive("rooms")">
+                                    <i class="fs-4 bi bi-calendar2-range ms-sm-3"></i> <span class="ms-3 d-none d-sm-inline">Salas</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="d-none d-sm-flex justify-content-center w-100 mb-3">
+                            <span style="color: #00C9EE">Estimatz.com | 2023</span>
+                        </div>                    
+                    </div>
+                </div>
+                <main role="main" class="col p-0 ps-2 pt-2 bg-light" style="background-color: aliceblue;">
+                    <div class="bg-white h-100 w-100" style="border-radius: 10px 0px 0px 0px;">
+                        @RenderBody()
+                    </div>                    
+                </main>
+            </div>
+        </div>        
+    </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+﻿G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API.Commands\ConfirmEmail\ConfirmEmailCommand.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API.Commands\ConfirmEmail\ConfirmEmailCommandHandler.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API.Commands\ConfirmRecoverPassword\ConfirmRecoverPasswordCommand.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API.Commands\ConfirmRecoverPassword\ConfirmRecoverPasswordCommandHandler.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API.Commands\Logout\LogoutCommand.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API.Commands\Logout\LogoutCommandHandler.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API.Commands\RecoverPassword\RecoverPasswordCommand.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API.Commands\RecoverPassword\RecoverPasswordCommandhandler.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API.Commands\RefreshToken\RefreshTokenCommand.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API.Commands\RefreshToken\RefreshTokenCommandHandler.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API.Commands\Register\RegisterNewUserCommand.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API.Commands\Register\RegisterNewUserCommandHandler.cs

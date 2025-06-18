@@ -1,0 +1,2 @@
+﻿G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Infrastructure\Estimatz.Login.API.Services\EmailService\IEmailService.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Infrastructure\Estimatz.Login.API.Services\EmailService\MailKitEmailService.cs

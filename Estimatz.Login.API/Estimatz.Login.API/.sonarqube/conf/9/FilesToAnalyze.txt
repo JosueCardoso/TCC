@@ -1,0 +1,17 @@
+﻿G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Tests\Estimatz.Login.API.Tests\Estimatz.Login.API.Commands\ConfirmEmail\ConfirmEmailCommandHandlerTest.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Tests\Estimatz.Login.API.Tests\Estimatz.Login.API.Commands\Logout\LogoutCommandHandlerTest.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Tests\Estimatz.Login.API.Tests\Estimatz.Login.API.Commands\RefreshToken\RefreshTokenCommandHandlerTest.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Tests\Estimatz.Login.API.Tests\Estimatz.Login.API.Commands\Register\RegisterNewUserCommandHandlerTests.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Tests\Estimatz.Login.API.Tests\Estimatz.Login.API.Data\TokenCacheTests\TokenMemoryCacheTest.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Tests\Estimatz.Login.API.Tests\Estimatz.Login.API.Notifications\NotificationsServiceTests.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Tests\Estimatz.Login.API.Tests\Estimatz.Login.API.Queries\SignInTests\SignInQueryHandlerTest.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Tests\Estimatz.Login.API.Tests\Estimatz.Login.API.Services\TokenTests\TokenManagerTest.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Tests\Estimatz.Login.API.Tests\Fakes\FakeUserSignInManager.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Tests\Estimatz.Login.API.Tests\Usings.cs
+C:\Users\Josue\.nuget\packages\microsoft.net.test.sdk\17.1.0\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs
+C:\Users\Josue\.nuget\packages\microsoft.testplatform.testhost\17.1.0\build\netcoreapp2.1\x64\testhost.exe
+C:\Users\Josue\.nuget\packages\microsoft.testplatform.testhost\17.1.0\build\netcoreapp2.1\x64\testhost.dll
+C:\Users\Josue\.nuget\packages\microsoft.testplatform.testhost\17.1.0\build\netcoreapp2.1\x64\Microsoft.TestPlatform.PlatformAbstractions.dll
+C:\Users\Josue\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Josue\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Josue\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll

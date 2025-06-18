@@ -1,0 +1,118 @@
+﻿@page
+@using Estimatz.Resources;
+@model Estimatz.UI.Models.CreateAccountModel
+@{
+    ViewData["Title"] = Language.GetString("CreateAccount");
+}
+
+<script>
+    $("#headerIndex").addClass("d-none");
+</script>
+
+<div class="w-100 d-flex justify-content-center align-items-center" style="height:95vh">
+    <img src="~/images/@Language.GetLogoName()" class="logo" />
+
+    @*Seletor de idioma*@
+    <div class="dropdown language-selector">
+	    <button class="btn dropdown-toggle text-black-50" type="button" id="dropdownLanguageSelector" data-bs-toggle="dropdown" aria-expanded="false">
+	    	@Language.GetString("Language")
+	    </button>
+	    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+	    	<li><a class="dropdown-item" style="cursor:pointer" onclick="switchCulture('pt-br')">@Language.GetString("Portuguese")</a></li>
+	    	<li><a class="dropdown-item" style="cursor:pointer" onclick="switchCulture('en-us')">@Language.GetString("English")</a></li>
+	    	<li><a class="dropdown-item" style="cursor:pointer" onclick="switchCulture('es-es')">@Language.GetString("Spanish")</a></li>
+	    </ul>
+	</div>
+
+    @*Primeira etapa do wizard (criar conta)*@
+    <div id="formCreateNewAccountContent" class="shadow rounded p-lg-3 px-lg-5 w-100 form-content-wizard">
+        <h1 style="color:#00C9EE" class="my-5 fs-2 text-center">@Language.GetString("CreateNewAccount")</h1>
+
+        <form id="formCreateNewAccount" class="m-3 needs-validation" novalidate>
+            <div class="form-floating mb-3">
+                
+                <input type="text" class="form-control form-control-lg" id="inputName" placeholder="Name" asp-for="Name" required>
+                <label for="inputName" class="form-label text-black-50">@Language.GetString("YourName")</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control form-control-lg" id="inputEmail" aria-describedby="emailHelp" placeholder="E-mail" asp-for="Email" required>
+                <label for="inputEmail" class="form-label text-black-50">E-mail</label>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <button id="buttonNextStepCreateAccount" type="button" class="btn w-50 mb-3" style="background-color: #00C9EE; color: white">@Language.GetString("CreateAccount")</button>
+                <a class="mt-2 mb-5" style="cursor: pointer; text-decoration: none; color:#00C9EE" asp-page="/Index">@Language.GetString("Cancel")</a>
+            </div>
+        </form>
+	</div>
+
+    @*Segunda etapa do wizard (criar senha)*@
+    <div id="formCreateNewPasswordContent" class="shadow rounded p-lg-3 px-lg-5 w-100 form-content-wizard d-none">
+        <h1 style="color:#00C9EE" class="my-5 fs-2 text-center">@Language.GetString("CreatePassword")</h1>
+
+        <form id="formCreateNewPassword" class="m-3 needs-validation was-validated" novalidate>
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control form-control-lg" id="inputCreatePassword" placeholder="Password" asp-for="Password" required>
+                <label for="inputCreatePassword" class="form-label text-black-50">@Language.GetString("Password")</label>
+            </div>
+
+            <div class ="form-floating mb-3">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" value="" id="checkMinimumCharacter" onclick="return false;" required>
+                    <label class="form-check-label" for="checkMinimumCaracter">@Language.GetString("MinimumCharacter")</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" value="" id="checkUppercase" onclick="return false;" required>
+                    <label class="form-check-label" for="checkUppercase">@Language.GetString("UpperCaseLetter")</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" value="" id="checkLowerCase" onclick="return false;" required>
+                    <label class="form-check-label" for="checkLowerCase">@Language.GetString("LowerCaseLetter")</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" value="" id="checkNumber" onclick="return false;" required>
+                    <label class="form-check-label" for="checkNumber">@Language.GetString("Number")</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" value="" id="checkSpecialCharacter" onclick="return false;" required>
+                    <label class="form-check-label" for="checkSpecialCharacter">@Language.GetString("SpecialCharacter")</label>
+                </div>
+            </div>
+            
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control form-control-lg" id="inputConfirmPassword" placeholder="Password" asp-for="ConfirmPassword" required>
+                <label for="inputConfirmPassword" class="form-label text-black-50">@Language.GetString("ConfirmPassword")</label>
+            </div>            
+            <div class="d-flex flex-column align-items-center">
+                <button id="buttonCreateAccount" type="button" class="btn w-50 mb-3" style="background-color: #00C9EE; color: white">@Language.GetString("Finalize")</button>
+                <a id="linkPreviousStepCreateAccount" class="mt-2 mb-1" style="cursor: pointer; text-decoration: none; color:#00C9EE">@Language.GetString("GoBack")</a>
+            </div>
+        </form>
+    </div>
+     
+    @*Terceira etapa do wizard (confirmação de conta criada)*@
+    <div id="accountCreatedSuccessfully" class="text-center d-none">
+        <h1 class="fs-2" style="color:#00C9EE">@Language.GetString("AccountCreatedSuccessfully")</h1>
+        <p style="width: 315px" class="m-auto my-4 text-black-50 text-account-created">@Language.GetString("AccountCreatedMessage01")</p>
+        <p style="width: 315px" class="m-auto my-4 text-black-50 text-account-created">@Language.GetString("AccountCreatedMessage02")</p>
+        <a class="btn btn-primary mt-3" style="background-color: #00C9EE; border:none;" asp-page="/Index" role="button">@Language.GetString("GoBackToHomePage")</a>
+    </div>
+
+    @*Terceira etapa do wizard (confirmação de conta criada)*@
+    <div id="accountNotCreatedSuccessfully" class="text-center d-none">
+        <h1 class="fs-2" style="color:#00C9EE">@Language.GetString("AccountNotCreatedSuccessfully")</h1>
+        <div id="errorMessagesContainer" class="d-none">
+            <p style="width: 300px" class="m-auto m-0 mt-2 text-black-50">@Language.GetString("AnErrorOcurred")</p>
+        </div>
+        <p style="width: 300px" class="m-auto my-4 text-black-50">@Language.GetString("AccountNotCreatedMessage01")</p>
+        <a class="btn btn-primary" style="background-color: #00C9EE; border:none;" asp-page="/Index" role="button">@Language.GetString("GoBackToHomePage")</a>
+    </div>
+</div>
+
+<script src="~/js/pages/partial/_createAccount.js" asp-append-version="true"></script>
+<script>
+    var createAccountUrl = '@Url.Action("CreateAccount", "Account")';
+</script>

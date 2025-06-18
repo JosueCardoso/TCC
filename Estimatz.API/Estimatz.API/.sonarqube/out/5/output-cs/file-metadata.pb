@@ -1,0 +1,12 @@
+r
+iG:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Queries\GetAllRooms\GetSimpleRoomsQuery.csutf-8y
+pG:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Queries\GetAllRooms\GetSimpleRoomsQueryHandler.csutf-8s
+jG:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Queries\GetIndicators\GetIndicatorsQuery.csutf-8z
+qG:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Queries\GetIndicators\GetIndicatorsQueryHandler.csutf-8g
+^G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Queries\GetRoom\GetRoomQuery.csutf-8n
+eG:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Queries\GetRoom\GetRoomQueryHandler.csutf-8i
+`G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Queries\GetStory\GetStoryQuery.csutf-8p
+gG:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Queries\GetStory\GetStoryQueryHandler.csutf-8‰
+~G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Queries\obj\Debug\net6.0\Estimatz.API.Queries.GlobalUsings.g.csutf-8’
+†G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Queries\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.csutf-8‡
+|G:\Estimatz\Estimatz.API\Estimatz.API\Application\Estimatz.API.Queries\obj\Debug\net6.0\Estimatz.API.Queries.AssemblyInfo.csutf-8

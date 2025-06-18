@@ -1,0 +1,1 @@
+﻿Nesse projeto estará as classes responsáveis por publicar os eventos da camada de application

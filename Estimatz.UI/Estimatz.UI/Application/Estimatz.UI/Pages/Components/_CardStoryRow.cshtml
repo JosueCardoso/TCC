@@ -1,0 +1,27 @@
+﻿@model Estimatz.UI.Models.UserStoryModel
+
+@if(Model.StorySelected){
+    <tr>
+        <td id="row_@Model.Id" class="border-0">
+            <div class="border border-2 text-black rounded p-2 d-flex justify-content-between" style="border-color: #00C9EE !important;">
+                <div name="rowStory" aria-data="@Model.Id" style="cursor: pointer; width: 80%">@Model.Name</div>
+                @if(Model.UserIsAdmin){
+                    <i class="bi bi-trash float-end me-2" name="editRow" aria-data="@Model.Id" style="cursor: pointer; color:red;"></i>
+                }                
+            </div>
+        </td>
+    </tr>
+}
+else
+{
+    <tr>
+        <td id="row_@Model.Id" class="border-0 text-black-50">
+            <div class="border border-1 rounded p-2 d-flex justify-content-between" style="cursor: pointer;">
+                <div name="rowStory" aria-data="@Model.Id" style="cursor: pointer; width: 80%">@Model.Name</div>
+                @if(Model.UserIsAdmin){
+                    <i class="bi bi-trash float-end me-2" name="editRow" aria-data="@Model.Id" style="cursor: pointer; color:red;"></i>
+                }                
+            </div>
+        </td>
+    </tr>
+}

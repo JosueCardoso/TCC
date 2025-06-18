@@ -1,0 +1,15 @@
+w
+nG:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API\Controllers\BaseController.csutf-8}
+tG:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API\Controllers\v1\AccountController.csutf-8{
+rG:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API\DbContext\ApplicationDbContext.csutf-8Ü
+}G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API\Migrations\20230503030755_InitialIdentity.csutf-8í
+ÜG:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API\Migrations\20230503030755_InitialIdentity.Designer.csutf-8ä
+ÄG:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API\Migrations\20230509031050_AdicionarNovoCampo.csutf-8ï
+âG:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API\Migrations\20230509031050_AdicionarNovoCampo.Designer.csutf-8å
+ÄG:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API\Migrations\ApplicationDbContextModelSnapshot.csutf-8r
+iG:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API\Models\ActionResponse.csutf-8d
+[G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API\Program.csutf-8í
+ÜG:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API\obj\Debug\net6.0\Estimatz.Login.API.GlobalUsings.g.csutf-8ú
+êG:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.csutf-8ê
+ÑG:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API\obj\Debug\net6.0\Estimatz.Login.API.AssemblyInfo.csutf-8£
+óG:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API\obj\Debug\net6.0\Estimatz.Login.API.MvcApplicationPartsAssemblyInfo.csutf-8

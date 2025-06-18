@@ -1,0 +1,4 @@
+﻿G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API.Events\NewUserConfirmationEmail\NewUserConfirmationEmailEvent.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API.Events\NewUserConfirmationEmail\NewUserConfirmationEmailEventHandler.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API.Events\RecoverPasswordEmail\RecoverPasswordEmailEvent.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Application\Estimatz.Login.API.Events\RecoverPasswordEmail\RecoverPasswordEmailEventHandler.cs

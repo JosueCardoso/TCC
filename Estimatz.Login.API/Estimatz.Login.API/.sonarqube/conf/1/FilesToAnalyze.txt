@@ -1,0 +1,9 @@
+﻿G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Domain\Estimatz.Login.API.Domain\Email\EmailMessage.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Domain\Estimatz.Login.API.Domain\Notification\Notification.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Domain\Estimatz.Login.API.Domain\Token\RefreshTokenRequestModel.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Domain\Estimatz.Login.API.Domain\Token\SimpleToken.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Domain\Estimatz.Login.API.Domain\Token\TokenConfiguration.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Domain\Estimatz.Login.API.Domain\User\ApplicationUser.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Domain\Estimatz.Login.API.Domain\User\Claim.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Domain\Estimatz.Login.API.Domain\User\SignInUser.cs
+G:\Estimatz\Estimatz.Login.API\Estimatz.Login.API\Domain\Estimatz.Login.API.Domain\User\UserToken.cs

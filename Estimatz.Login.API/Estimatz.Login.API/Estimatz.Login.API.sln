@@ -1,0 +1,106 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{806C521B-5AB7-4EEF-91A9-D736F9E658AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{C7DEDE82-3864-47DA-B8A3-D0FF34F1A036}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{17AB3B20-674F-4494-80DE-4943D64763EE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estimatz.Login.API.Entities", "Domain\Estimatz.Login.API.Domain\Estimatz.Login.API.Entities.csproj", "{3E4883CA-D3D8-4985-908B-7C49FB199FB7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estimatz.Login.API.Data", "Infrastructure\Estimatz.Login.API.Infrastructure\Estimatz.Login.API.Data.csproj", "{C4B49DC6-324D-4F1B-8D23-2B788ED35F15}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estimatz.Login.API", "Application\Estimatz.Login.API\Estimatz.Login.API.csproj", "{D7F35DFE-E113-4650-8B06-915DA59D8648}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estimatz.Login.API.Infra.Services", "Infrastructure\Estimatz.Login.API.Services\Estimatz.Login.API.Infra.Services.csproj", "{832B65FA-F722-4F33-8B0F-7D3A9725B0B8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estimatz.Login.API.Commands", "Application\Estimatz.Login.API.Commands\Estimatz.Login.API.Commands.csproj", "{379019A3-9AED-4E93-A71E-CD1C31E19AD5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estimatz.Login.API.Events", "Application\Estimatz.Login.API.Events\Estimatz.Login.API.Events.csproj", "{79588BBB-C927-47EC-843C-0A28B5E0B243}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estimatz.Login.API.Infra.Events", "Infrastructure\Estimatz.Login.API.Infra.Events\Estimatz.Login.API.Infra.Events.csproj", "{298EB5E2-FB0A-48F4-8E1D-7AF2B0F3D4CD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estimatz.Login.API.Services", "Domain\Estimatz.Login.API.Services\Estimatz.Login.API.Services.csproj", "{5BD9E707-5E3D-4525-9B01-F757BB956679}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estimatz.Login.API.Queries", "Application\Estimatz.Login.API.Queries\Estimatz.Login.API.Queries.csproj", "{080F3B0C-BBED-4569-B3DC-968CC62D1C5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{BE3C33E7-C7AD-46EB-97B4-0C83ADD9650C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estimatz.Login.API.Tests", "Tests\Estimatz.Login.API.Tests\Estimatz.Login.API.Tests.csproj", "{BD0527F4-765B-4EFD-A4A1-DEB3F9F54206}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estimatz.Login.API.Notifications", "Application\Estimatz.Login.API.Notifications\Estimatz.Login.API.Notifications.csproj", "{FA30014A-4278-446A-BA02-B32B9C48E7B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E4883CA-D3D8-4985-908B-7C49FB199FB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E4883CA-D3D8-4985-908B-7C49FB199FB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E4883CA-D3D8-4985-908B-7C49FB199FB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E4883CA-D3D8-4985-908B-7C49FB199FB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4B49DC6-324D-4F1B-8D23-2B788ED35F15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4B49DC6-324D-4F1B-8D23-2B788ED35F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4B49DC6-324D-4F1B-8D23-2B788ED35F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4B49DC6-324D-4F1B-8D23-2B788ED35F15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7F35DFE-E113-4650-8B06-915DA59D8648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7F35DFE-E113-4650-8B06-915DA59D8648}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7F35DFE-E113-4650-8B06-915DA59D8648}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7F35DFE-E113-4650-8B06-915DA59D8648}.Release|Any CPU.Build.0 = Release|Any CPU
+		{832B65FA-F722-4F33-8B0F-7D3A9725B0B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{832B65FA-F722-4F33-8B0F-7D3A9725B0B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{832B65FA-F722-4F33-8B0F-7D3A9725B0B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{832B65FA-F722-4F33-8B0F-7D3A9725B0B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{379019A3-9AED-4E93-A71E-CD1C31E19AD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{379019A3-9AED-4E93-A71E-CD1C31E19AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{379019A3-9AED-4E93-A71E-CD1C31E19AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{379019A3-9AED-4E93-A71E-CD1C31E19AD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79588BBB-C927-47EC-843C-0A28B5E0B243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79588BBB-C927-47EC-843C-0A28B5E0B243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79588BBB-C927-47EC-843C-0A28B5E0B243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79588BBB-C927-47EC-843C-0A28B5E0B243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{298EB5E2-FB0A-48F4-8E1D-7AF2B0F3D4CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{298EB5E2-FB0A-48F4-8E1D-7AF2B0F3D4CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{298EB5E2-FB0A-48F4-8E1D-7AF2B0F3D4CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{298EB5E2-FB0A-48F4-8E1D-7AF2B0F3D4CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BD9E707-5E3D-4525-9B01-F757BB956679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BD9E707-5E3D-4525-9B01-F757BB956679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BD9E707-5E3D-4525-9B01-F757BB956679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BD9E707-5E3D-4525-9B01-F757BB956679}.Release|Any CPU.Build.0 = Release|Any CPU
+		{080F3B0C-BBED-4569-B3DC-968CC62D1C5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{080F3B0C-BBED-4569-B3DC-968CC62D1C5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{080F3B0C-BBED-4569-B3DC-968CC62D1C5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{080F3B0C-BBED-4569-B3DC-968CC62D1C5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD0527F4-765B-4EFD-A4A1-DEB3F9F54206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD0527F4-765B-4EFD-A4A1-DEB3F9F54206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD0527F4-765B-4EFD-A4A1-DEB3F9F54206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD0527F4-765B-4EFD-A4A1-DEB3F9F54206}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA30014A-4278-446A-BA02-B32B9C48E7B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA30014A-4278-446A-BA02-B32B9C48E7B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA30014A-4278-446A-BA02-B32B9C48E7B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA30014A-4278-446A-BA02-B32B9C48E7B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3E4883CA-D3D8-4985-908B-7C49FB199FB7} = {C7DEDE82-3864-47DA-B8A3-D0FF34F1A036}
+		{C4B49DC6-324D-4F1B-8D23-2B788ED35F15} = {17AB3B20-674F-4494-80DE-4943D64763EE}
+		{D7F35DFE-E113-4650-8B06-915DA59D8648} = {806C521B-5AB7-4EEF-91A9-D736F9E658AD}
+		{832B65FA-F722-4F33-8B0F-7D3A9725B0B8} = {17AB3B20-674F-4494-80DE-4943D64763EE}
+		{379019A3-9AED-4E93-A71E-CD1C31E19AD5} = {806C521B-5AB7-4EEF-91A9-D736F9E658AD}
+		{79588BBB-C927-47EC-843C-0A28B5E0B243} = {806C521B-5AB7-4EEF-91A9-D736F9E658AD}
+		{298EB5E2-FB0A-48F4-8E1D-7AF2B0F3D4CD} = {17AB3B20-674F-4494-80DE-4943D64763EE}
+		{5BD9E707-5E3D-4525-9B01-F757BB956679} = {C7DEDE82-3864-47DA-B8A3-D0FF34F1A036}
+		{080F3B0C-BBED-4569-B3DC-968CC62D1C5D} = {806C521B-5AB7-4EEF-91A9-D736F9E658AD}
+		{BD0527F4-765B-4EFD-A4A1-DEB3F9F54206} = {BE3C33E7-C7AD-46EB-97B4-0C83ADD9650C}
+		{FA30014A-4278-446A-BA02-B32B9C48E7B9} = {806C521B-5AB7-4EEF-91A9-D736F9E658AD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1853A86F-9277-449B-845C-01891FE8743E}
+	EndGlobalSection
+EndGlobal

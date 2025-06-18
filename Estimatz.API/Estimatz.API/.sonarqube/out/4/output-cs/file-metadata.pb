@@ -1,0 +1,12 @@
+q
+hG:\Estimatz\Estimatz.API\Estimatz.API\Infrastructure\Estimatz.API.Data\RoomRepository\IRoomRepository.csutf-8p
+gG:\Estimatz\Estimatz.API\Estimatz.API\Infrastructure\Estimatz.API.Data\RoomRepository\RoomRepository.csutf-8s
+jG:\Estimatz\Estimatz.API\Estimatz.API\Infrastructure\Estimatz.API.Data\StoryRepository\IStoryRepository.csutf-8r
+iG:\Estimatz\Estimatz.API\Estimatz.API\Infrastructure\Estimatz.API.Data\StoryRepository\StoryRepository.csutf-8r
+iG:\Estimatz\Estimatz.API\Estimatz.API\Infrastructure\Estimatz.API.Data\UserRepository\Cache\IUserCache.csutf-8q
+hG:\Estimatz\Estimatz.API\Estimatz.API\Infrastructure\Estimatz.API.Data\UserRepository\Cache\UserCache.csutf-8q
+hG:\Estimatz\Estimatz.API\Estimatz.API\Infrastructure\Estimatz.API.Data\UserRepository\IUserRepository.csutf-8p
+gG:\Estimatz\Estimatz.API\Estimatz.API\Infrastructure\Estimatz.API.Data\UserRepository\UserRepository.csutf-8†
+{G:\Estimatz\Estimatz.API\Estimatz.API\Infrastructure\Estimatz.API.Data\obj\Debug\net6.0\Estimatz.API.Data.GlobalUsings.g.csutf-8’
+†G:\Estimatz\Estimatz.API\Estimatz.API\Infrastructure\Estimatz.API.Data\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.csutf-8„
+yG:\Estimatz\Estimatz.API\Estimatz.API\Infrastructure\Estimatz.API.Data\obj\Debug\net6.0\Estimatz.API.Data.AssemblyInfo.csutf-8

@@ -1,0 +1,55 @@
+﻿@model Estimatz.UI.Models.CommonModel
+@using Estimatz.Resources;
+@{
+    ViewData["Title"] = Language.GetString("EmailConfirmation");
+}
+
+<script>
+    $("#headerIndex").addClass("d-none");
+</script>
+
+<div class="w-100 d-flex justify-content-center align-items-center" style="height:95vh">
+    <img src="~/images/logotipo.png" class="logo" />
+
+    @*Seletor de idioma*@
+    <div class="dropdown language-selector">
+        <button class="btn dropdown-toggle text-black-50" type="button" id="dropdownLanguageSelector" data-bs-toggle="dropdown" aria-expanded="false">
+            @Language.GetString("Language")
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" style="cursor:pointer" onclick="switchCulture('pt-br')">@Language.GetString("Portuguese")</a></li>
+            <li><a class="dropdown-item" style="cursor:pointer" onclick="switchCulture('en-us')">@Language.GetString("English")</a></li>
+            <li><a class="dropdown-item" style="cursor:pointer" onclick="switchCulture('es-es')">@Language.GetString("Spanish")</a></li>
+        </ul>
+    </div>
+
+    @if (Model.Success)
+    {
+        <div id="emailConfirmedSuccessfully" class="text-center">
+            <h1 class="fs-2" style="color:#00C9EE">@Language.GetString("EmailConfirmedSuccessfully")</h1>
+            <p style="width: 315px" class="m-auto my-4 text-black-50 text-account-created">@Language.GetString("WelcomeToEstimatz")</p>
+            <p style="width: 315px" class="m-auto my-4 text-black-50 text-account-created">@Language.GetString("BackToHomePageForSignIn")</p>
+            <a class="btn btn-primary mt-3" style="background-color: #00C9EE; border:none;" asp-page="/Index" role="button">@Language.GetString("GoBackToHomePage")</a>
+        </div>
+    }
+    else
+    {
+        <div id="emailNotConfirmedSuccessfully" class="text-center">
+            <h1 class="fs-2" style="color:#00C9EE">@Language.GetString("EmailNotConfirmedSuccessfully")</h1>
+            @if (Model.Messages.Any())
+            {
+                <div id="errorMessagesContainer">
+                    <p style="width: 300px" class="m-auto m-0 mt-2 text-black-50">@Language.GetString("AnErrorOcurred")</p>
+
+                    @foreach (var message in Model.Messages)
+                    {
+                        <p style="width: 300px" class="m-auto m-0 text-warning">@message</p>
+                    }
+                </div>
+            }
+            <p style="width: 300px" class="m-auto my-4 text-black-50">@Language.GetString("AccountNotCreatedMessage01")</p>
+            <a class="btn btn-primary" style="background-color: #00C9EE; border:none;" asp-page="/Index" role="button">@Language.GetString("GoBackToHomePage")</a>
+        </div>
+    }
+</div>
+

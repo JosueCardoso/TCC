@@ -1,0 +1,154 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Compilador do Microsoft (R) Visual C#",
+        "version": "4.6.0.0",
+        "fileVersion": "4.6.0-3.23259.8 (c3cc1d0c)",
+        "semanticVersion": "4.6.0",
+        "language": "pt-BR"
+      },
+      "results": [
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "Não é possível converter um literal nulo em um tipo de referência não anulável.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///G:/Estimatz/Estimatz.Login.API/Estimatz.Login.API/Tests/Estimatz.Login.API.Tests/Estimatz.Login.API.Commands/ConfirmEmail/ConfirmEmailCommandHandlerTest.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 59,
+                  "endLine": 29,
+                  "endColumn": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "Não é possível converter um literal nulo em um tipo de referência não anulável.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///G:/Estimatz/Estimatz.Login.API/Estimatz.Login.API/Tests/Estimatz.Login.API.Tests/Estimatz.Login.API.Queries/SignInTests/SignInQueryHandlerTest.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 58,
+                  "endLine": 30,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "Não é possível converter um literal nulo em um tipo de referência não anulável.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///G:/Estimatz/Estimatz.Login.API/Estimatz.Login.API/Tests/Estimatz.Login.API.Tests/Estimatz.Login.API.Commands/Logout/LogoutCommandHandlerTest.cs",
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 59,
+                  "endLine": 78,
+                  "endColumn": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "Não é possível converter um literal nulo em um tipo de referência não anulável.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///G:/Estimatz/Estimatz.Login.API/Estimatz.Login.API/Tests/Estimatz.Login.API.Tests/Estimatz.Login.API.Commands/Logout/LogoutCommandHandlerTest.cs",
+                "region": {
+                  "startLine": 120,
+                  "startColumn": 59,
+                  "endLine": 120,
+                  "endColumn": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "O membro 'ReturnResult' não acessa os dados da instância e pode ser marcado como estático",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///G:/Estimatz/Estimatz.Login.API/Estimatz.Login.API/Tests/Estimatz.Login.API.Tests/Fakes/FakeUserSignInManager.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 36,
+                  "endLine": 48,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CA1822": {
+          "id": "CA1822",
+          "shortDescription": "Marcar membros como estáticos",
+          "fullDescription": "Os membros que não acessam os dados da instância nem chamam os métodos da instância podem ser marcados como estáticos. Depois que você marcar os métodos como estáticos, o compilador emitirá os sites de chamada não virtuais para esses membros. Isso pode oferecer um ganho de desempenho mensurável para códigos sensíveis ao desempenho.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1822",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CS8625": {
+          "id": "CS8625",
+          "shortDescription": "Não é possível converter um literal nulo em um tipo de referência não anulável.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8625)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
